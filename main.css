@@ -1,8 +1,89 @@
+body{
+    background-color:;
+}
+
+.header{
+    width: 100%;
+    border: 2px solid green;
+    height: 10vh;
+    display: flex;
+}
+
+#header1{
+    flex-basis: 70%;
+    padding: 2%;
+}
+
+#art{
+    flex-basis: 15%;
+    padding: 2%;
+}
+
+#about{
+    flex-basis: 15%;
+    padding: 2%;
+}
 .main{
     display: flex;
+
 }
 
 #img1{
     border: 2px solid red;
+    height: 80vh;
+    flex-basis: 25%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#img2{
+    border: 2px solid red;
+    height: 80vh;
+    flex-basis: 25%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img3{
+    border: 2px solid red;
+    height: 80vh;
+    flex-basis: 25%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img4{
+    border: 2px solid red;
+    height: 80vh;
+    flex-basis: 25%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    border: 2px solid green;
+    height: 10vh;
+    display: flex;
+}
+
+#modal{
+    display: flex;
+    flex-basis: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
