@@ -3,7 +3,7 @@ body{
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* 
 .spinning-box {
     background-color: white;
     background-image: radial-gradient(rgb(43, 147, 182), white);
@@ -21,9 +21,9 @@ body{
     100% {
       transform: rotate(360deg);
     }
-  }
+  } */
 
-  .Image1 {
+  /* .Image1 {
     background-color: rgba(7,34,53,1);
     bottom: 0;
     left: 0;
@@ -37,7 +37,7 @@ body{
     transform: translateX(100%);
     z-index: 1;
   }
-  
+   */
   
 
 .header{
