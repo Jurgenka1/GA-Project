@@ -1,12 +1,51 @@
 body{
-    background-color:;
+    background-image: linear-gradient(rgb(134, 61, 134), rgb(46, 100, 170),  lightblue);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.spinning-box {
+    background-color: white;
+    background-image: radial-gradient(rgb(43, 147, 182), white);
+    height: 100px;
+    animation: roll 10s infinite linear;
+    margin: 10px;
+    width: 100px;
+    opacity: 0.15;
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .Image1 {
+    background-color: rgba(7,34,53,1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    overflow-y: scroll;
+    padding: 15px 30px;
+    position: fixed;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(100%);
+    z-index: 1;
+  }
+  
+  
 
 .header{
     width: 100%;
     border: 2px solid green;
     height: 10vh;
     display: flex;
+    font-size: larger;
 }
 
 #header1{
