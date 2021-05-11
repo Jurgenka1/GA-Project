@@ -1,21 +1,47 @@
+//-----------Image Event Listeners------------------------
+
 const img1 = document.getElementById('img1')
 console.log(img1)
     
 img1.addEventListener('mouseover', () => {
     
-    img1.style.backgroundColor = "red"
+    img1.style.backgroundImage = `url('Images/1.jpg')`
 })
 
-// const img1p = document.querySelector('#img1p')
+img1.addEventListener('mouseleave', () => {
+    
+    img1.style.backgroundImage = ''
+})
 
-// const Image1 = document.querySelector('.Image1')
+// ================
 
-// const Imagine1close = document.querySelector('#img1-close')
+const img1p = document.querySelector('#img1p')
+console.log(img1p)
 
-// img1p.addEventListener('click', () => {
-//     menu.classList.add('menu-open')
-// })
+const Image1 = document.querySelector('.Image1')
 
-// magine1close.addEventListener('click', () => {
-//     menu.classList.remove('menu-open')
-// })
+img1p.addEventListener('click', () => {
+    document.querySelector('.Image1').classList.add('.Image1-open')
+})
+
+
+//------ Modal Box--------------------
+
+const openBtn = document.getElementById('openMessage');
+const modal = document.getElementById('modal-box')
+const close = document.getElementById('close')
+
+//Functions
+const openModal = () => {
+  modal.style.display = 'block';
+}
+
+const closeModal = () => {
+  modal.style.display = 'none'
+}
+
+//Event Listeners
+openBtn.addEventListener('click', openModal)
+
+close.addEventListener('click', closeModal)
+
