@@ -13,8 +13,24 @@ body{
 }
 
 #header1{
-    flex-basis: 70%;
+    flex-basis: 10%;
     padding: 2%;
+    display: flex;
+    justify-content: left;
+}
+
+#header2{
+  flex-basis: 10%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.spin{
+  flex-basis: 70%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #art{
@@ -25,12 +41,33 @@ body{
 #about{
     flex-basis: 15%;
     padding: 2%;
+    color: white;
 }
 .main{
     display: flex;
-
 }
 
+/* ------------Image add--------------- */
+
+.ImageAdd {
+  background-color: rgba(7,34,53,1);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 1;
+  overflow-y: scroll;
+  padding: 15px 30px;
+  position: fixed;
+  transition: all 0.35s ease-in-out;
+  transform: translateX(100%);
+  z-index: 1;
+}
+
+.ImageAdd-open{
+  transform: translateX(100%);
+  opacity: 1;
+}
 /*--------------Image 1---------------- */
 
 #img1{
@@ -44,25 +81,6 @@ body{
     align-items: center;
 }
 
-.Image1 {
-    background-color: rgba(7,34,53,1);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    opacity: 0;
-    overflow-y: scroll;
-    padding: 15px 30px;
-    position: fixed;
-    transition: all 0.35s ease-in-out;
-    transform: translateX(100%);
-    z-index: 1;
-  }
-  
-.Image1-open{
-    transform: translateX(100%);
-    opacity: 1;
-}
 
 /*---------- Image 2----------------- */
 
@@ -147,20 +165,20 @@ body{
 
 #video{
     display: block;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 /* -------------Spinning Boxes-------------- */
 .spinning-box {
     background-color: white;
     background-image: radial-gradient(rgb(43, 147, 182), white);
     height: 100px;
-    animation: roll 10s infinite linear;
+    animation: move 8s infinite linear;
     margin: 10px;
     width: 100px;
     opacity: 0.15;
   }
   
-  @keyframes roll {
+  @keyframes move {
 
     0% {
         transform: translateY(0px);
@@ -175,22 +193,22 @@ body{
     background-color: white;
     background-image: radial-gradient(rgb(43, 147, 182), white);
     height: 50px;
-    animation: move 5s infinite linear;
+    animation: move1 7s infinite linear;
     margin: 10px;
     width: 50px;
     opacity: 0.15;
   }
   
-  @keyframes move {
+  @keyframes move1 {
 
     0% {
-        transform: translateY(0px);
-        transform: translateY(100px);
-    }
-    100% {
-        transform: translateY(700px);
-    }
+      transform: translateY(0px);
+      /* transform: translateX(100px); */
   }
+  100% {
+      transform: translateY(700px);
+  }
+}
 
   .spinning-box2 {
     background-color: white;
@@ -203,34 +221,34 @@ body{
   }
 
   @keyframes move1 {
-      0% {
-        transform: translateY(0px);
-        transform: translateX(200px);
-      }
-      100% {
-        transform: translateY(2300px);
-    }
+    0% {
+      transform: translateY(0px);
+      /* transform: translateX(100px); */
   }
+  100% {
+      transform: translateY(700px);
+  }
+}
 
   .spinning-box3 {
     background-color: white;
     background-image: radial-gradient(rgb(43, 147, 182), white);
     height: 80px;
-    animation: move3 10s infinite linear;
+    animation: move3 20s infinite linear;
     margin: 10px;
     width: 80px;
     opacity: 0.15;
   }
 
   @keyframes move3 {
-      0% {
-        transform: translateY(0px);
-        transform: translateX(700px);
-      }
-      100% {
-        transform: translateY(1500px);
-    }
+    0% {
+      transform: translateY(0px);
+      /* transform: translateX(100px); */
   }
+  100% {
+      transform: translateY(700px);
+  }
+}
 
   .spinning-box4 {
     background-color: white;
@@ -243,14 +261,14 @@ body{
   }
 
   @keyframes move4 {
-      0% {
-        transform: translateY(0px);
-        transform: translateX(900px);
-      }
-      100% {
-        transform: translateY(3200px);
-    }
+    0% {
+      transform: translateY(0px);
+      /* transform: translateX(100px); */
   }
+  100% {
+      transform: translateY(700px);
+  }
+}
 
   .spinning-box5 {
     background-color: white;
@@ -263,14 +281,14 @@ body{
   }
 
   @keyframes move5 {
-      0% {
-        transform: translateY(0px);
-        transform: translateX(1000px);
-      }
-      100% {
-        transform: translateY(700px);
-    }
+    0% {
+      transform: translateY(0px);
+      /* transform: translateX(100px); */
   }
+  100% {
+      transform: translateY(700px);
+  }
+}
   /* --------------------footer----------------- */
   .footer{
     width: 100%;
@@ -290,3 +308,4 @@ body{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
