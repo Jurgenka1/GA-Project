@@ -55,9 +55,10 @@ console.log(img1p)
 
 img1p.addEventListener('click', () => {
     document.querySelector('.ImageAdd').classList.add('.ImageAdd-open')
+    console.log('working?')
 })
 
-const close = document.querySelector('#img1-close')
+const close = document.querySelector('#imgAdd-close')
 // console.log(close)
 close.addEventListener('click', () => {
     document.querySelector('.ImageAdd').classList.remove('.ImageAdd-open')
