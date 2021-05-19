@@ -4,7 +4,7 @@ const img1 = document.getElementById('img1')
     
 img1.addEventListener('mouseover', () => {
     
-    img1.style.backgroundImage = `url('Images/1.jpg')`
+    img1.style.backgroundImage = `url('/Images/1.jpg')`
 })
 
 img1.addEventListener('mouseleave', () => {
@@ -50,19 +50,19 @@ img4.addEventListener('mouseleave', () => {
 
 // ================ UI =============
 
-const img1p = document.querySelector('#img1p')
-console.log(img1p)
+// const img1p = document.querySelector('#img1p')
+// console.log(img1p)
 
-img1p.addEventListener('click', () => {
-    document.querySelector('.ImageAdd').classList.add('.ImageAdd-open')
-    console.log('working?')
-})
+// img1p.addEventListener('click', () => {
+//     document.querySelector('.ImageAdd').classList.add('.ImageAdd-open')
+//     console.log('working?')
+// })
 
-const close = document.querySelector('#imgAdd-close')
-// console.log(close)
-close.addEventListener('click', () => {
-    document.querySelector('.ImageAdd').classList.remove('.ImageAdd-open')
-})
+// const close = document.querySelector('#imgAdd-close')
+// // console.log(close)
+// close.addEventListener('click', () => {
+//     document.querySelector('.ImageAdd').classList.remove('.ImageAdd-open')
+// })
 //------ Modal Box--------------------
 
 const openBtn = document.getElementById('openMessage');

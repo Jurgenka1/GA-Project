@@ -1,5 +1,7 @@
 body{
-    background-image: linear-gradient(rgb(134, 61, 134), rgb(46, 100, 170),  lightblue);
+    /* background-image: linear-gradient(rgb(134, 61, 134), rgb(46, 100, 170),  lightblue); */
+    background-image: linear-gradient(rgb(102, 22, 102), white);
+
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
