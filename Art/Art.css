@@ -1,9 +1,12 @@
 body{
-    background-image: linear-gradient(rgb(134, 61, 134), rgb(46, 100, 170),  lightblue);
+    /* background-image: linear-gradient(rgb(134, 61, 134), rgb(46, 100, 170),  lightblue); */
     /* background-color: purple; */
+    background-image: linear-gradient(rgb(102, 22, 102), white);
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 header{
     width: 100%;
@@ -15,25 +18,46 @@ header{
     justify-content: center;
     border: 2px solid green;
 }
+/* .gallery{
+    
+} */
 
 .one {
     width: 100%;
     border: 2px solid blue;
-    height: 35vh;
+    height: 40vh;
     display: flex;
+    flex-basis: 25%;
+    justify-items: center;
+    align-items: center;
+
 }
 
 .two {
     width: 100%;
     border: 2px solid blue;
-    height: 35vh;
+    height: 40vh;
     display: flex;
+    flex-basis: 25%;
+    justify-items: center;
+    align-items: center;
 }
 
 div {
     flex-basis: 25%;
     border: 2px solid yellow;
+    justify-content: space-around;
 }
+
+/* #pic1{
+    background-image: url(/Images/cup.jpg);
+    background-size: cover;
+}
+
+#pic2{
+    background-image: url(/Images/panda.jpg);
+    background-size: cover;
+} */
 
 footer{
     width: 100%;
@@ -44,4 +68,9 @@ footer{
     padding: 2%;
     justify-content: center;
     border: 2px solid green;
+    color: rgb(102, 22, 102);
 }
+
+
+
+

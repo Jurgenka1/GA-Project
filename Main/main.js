@@ -1,51 +1,61 @@
 //-----------Image Event Listeners------------------------
-
+   
 const img1 = document.getElementById('img1')
+// const img1p = document.getElementById('img1p')
     
 img1.addEventListener('mouseover', () => {
     
-    img1.style.backgroundImage = `url('/Images/1.jpg')`
+    img1.style.opacity = 1
+    // img1p.style.opacity = 0
+
 })
 
 img1.addEventListener('mouseleave', () => {
     
-    img1.style.backgroundImage = ''
+    img1.style.opacity = 0
+    // img1p.style.opacity = 1
 })
+
 
 const img2 = document.getElementById('img2')
     
 img2.addEventListener('mouseover', () => {
     
-    img2.style.backgroundColor = 'red'
+    img2.style.opacity = 1
 })
 
 img2.addEventListener('mouseleave', () => {
     
-    img2.style.backgroundColor = ''
+    img2.style.opacity = 0
 })
+
 
 const img3 = document.getElementById('img3')
     
 img3.addEventListener('mouseover', () => {
     
-    img3.style.backgroundColor = 'blue'
+    img3.style.opacity = 1
+
 })
+
 
 img3.addEventListener('mouseleave', () => {
     
-    img3.style.backgroundColor = ''
+    img3.style.opacity = 0
+
 })
 
 const img4 = document.getElementById('img4')
     
 img4.addEventListener('mouseover', () => {
     
-    img4.style.backgroundColor = 'purple'
+    img4.style.opacity = 1
 })
+
 
 img4.addEventListener('mouseleave', () => {
     
-    img4.style.backgroundColor = ''
+    img4.style.opacity = 0
 })
 
 // ================ UI =============
