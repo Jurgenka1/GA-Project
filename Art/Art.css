@@ -18,34 +18,48 @@ header{
     justify-content: center;
     border: 2px solid green;
 }
-/* .gallery{
-    
-} */
+
 
 .one {
-    width: 100%;
-    border: 2px solid blue;
-    height: 40vh;
     display: flex;
+    justify-content: space-evenly;
     flex-basis: 25%;
-    justify-items: center;
-    align-items: center;
-
+    height: 35vh;
 }
 
-.two {
-    width: 100%;
-    border: 2px solid blue;
-    height: 40vh;
-    display: flex;
-    flex-basis: 25%;
+#pic1{
+    margin: 5px;
     justify-items: center;
     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(/Images/art.jpg) 
+}
+
+#pic2{
+    margin: 5px;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(/Images/cup.jpg) 
+}
+
+
+.two {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 25%;
+    height: 35vh;
 }
 
 div {
     flex-basis: 25%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     justify-content: space-around;
 }
 
