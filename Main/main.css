@@ -1,12 +1,31 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace
+}
+
+#videoC{
+  position: fixed;
+  z-index: -2;
+  width: 100%;
+  opacity: 20%;
+}
+
+
 body{
     /* background-image: linear-gradient(rgb(134, 61, 134), rgb(46, 100, 170),  lightblue); */
-    background-image: linear-gradient(rgb(102, 22, 102), white);
-
+    background-image: linear-gradient(#E27396, #EA9AB2, #EFCFE3);
     color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 a{
   color: white;
+}
+
+.main{
+  opacity: 80%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: px;
 }
 
 .header{
@@ -14,14 +33,16 @@ a{
     /* border: 2px solid green; */
     height: 10vh;
     display: flex;
-    font-size: larger;
+    font-size: 30px;
 }
 
 #header1{
-    flex-basis: 10%;
+    flex-basis: 30%;
     padding: 2%;
     display: flex;
     justify-content: left;
+    /* border: 2px solid blue; */
+
 }
 
 #header2{
@@ -29,6 +50,11 @@ a{
   padding: 2%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid red; */
+  font-size: 25px;
+  
+
 }
 
 .spin{
@@ -36,48 +62,36 @@ a{
     padding: 2%;
     display: flex;
     justify-content: space-evenly;
+    /* border: 2px solid green; */
+
 }
 
 #art{
-    flex-basis: 15%;
+    flex-basis: 10%;
     padding: 2%;
+    display: flex;
+
     
 
 }
 
 #about{
-    flex-basis: 15%;
+    flex-basis: 10%;
     padding: 2%;
-    color: white;
+    display: flex;
+
 }
 .main{
     display: flex;
+
 }
 
-/* ------------Image add--------------- */
-
-/* .ImageAdd {
-  background-color: rgba(7,34,53,1);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  opacity: 1;
-  overflow-y: scroll;
-  padding: 15px 30px;
-  /* position: fixed; */
-  /* transition: all 0.35s ease-in-out;
-  transform: translateX(100%);
-  z-index: 1;
-}
-
-.ImageAdd-open{
-  transform: translateX(-100%);
-  /* opacity: 1; */
-/* } */
 /*--------------Image 1---------------- */
 #img1p{
-  opacity: 1;
+  color: #E27396;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-style: normal;
 }
 
 #img1{
@@ -97,6 +111,12 @@ a{
 
 
 /*---------- Image 2----------------- */
+#img2p{
+  color: #E27396;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-style: normal;
+}
 
 #img2{
     /* border: 2px solid red; */
@@ -112,7 +132,14 @@ a{
 }
 
 /*---------- Image 3----------------- */
-#img3{
+#img3p{
+  color: #E27396;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-style: normal;
+}
+
+#img3{   
     /* border: 2px solid red; */
     height: 80vh;
     flex-basis: 25%;
@@ -127,6 +154,13 @@ a{
 }
 
 /*---------- Image 4----------------- */
+#img4p{
+  color: #E27396;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  font-style: normal;
+}
+
 #img4{
     /* border: 2px solid red; */
     height: 80vh;
@@ -320,7 +354,7 @@ a{
 }
 
 #openMessage {
-    background-color: rgb(98, 129, 139);
+    background-color: #B3DEE2;
     border: none;
     color: white;
     padding: 15px 32px;

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art</title>
+    <link rel="stylesheet" href="/Art/Art2/art2.css">
+</head>
+
+<body>
+    <video id="videoC" autoplay muted loop src="/Images/Celia Video.mp4" type= "video"></video>
+    
+   <div class="header">
+        <h2>Celia's Art</h2>
+   </div>
+
+
+   <section class="imageContainer">
+
+    <div class="image" id="pic1" style="background-image: url(/Images/art.jpg);">
+        <div class="image-overlay">
+            <button id="btn-text1">Fancy Art</button>
+        </div>
+    </div>
+
+    <div class="image" id="pic2" style="background-image: url(/Images/cup.jpg);">
+        <div class="image-overlay">
+                <button id="btn-text2">Fancy Cup</button>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div class="image" id="pic3" style="background-image: url(/Images/deer.jpg);">
+        <div class="image-overlay">
+                    <button id="btn-text3">Fancy Deer</button>
+                </div>
+        
+    </div>
+
+    
+   </section>
+<!-- modal 1 -->
+   <div class="modal1-box">
+    <div class="modal1-text">
+        <iframe id="modal1-pic" width="1000" height="500" src="/Images/art.jpg" frameborder="0"></iframe>
+        <a id="close-pic1" href="#">Close</a>
+     </div>
+    </div>
+
+<!-- modal 2 -->
+    <div class="modal2-box">
+        <div class="modal2-text">
+            <iframe id="modal2-pic" width="1000" height="500" src="/Images/cup.jpg" frameborder="0"></iframe>
+            <a id="close-pic2" href="#">Close</a>
+         </div>
+        </div>
+
+    <!-- modal 3 -->
+
+    <div class="modal3-box">
+        <div class="modal3-text">
+            <iframe id="modal3-pic" width="1000" height="500" src="/Images/deer.jpg" frameborder="0"></iframe>
+            <a id="close-pic3" href="#">Close</a>
+         </div>
+        </div>
+
+  
+    
+</body>
+
+<footer>
+    <h2> <a href="/Main/main.html" class="foot">Return</a></h2>
+</footer>
+<script src="/Art/Art2/art2.js"></script>
+</html>
