@@ -41,7 +41,7 @@ const modal3 = document.querySelector('.modal3-box')
 const close3 = document.getElementById('close-pic3')
 
 const openModal3 = () => {
-    modal2.style.display = 'block';
+    modal3.style.display = 'block';
   }
 
   function closeModal3() {
@@ -52,3 +52,23 @@ const openModal3 = () => {
   openBtn3.addEventListener('click', openModal3)
   
   close3.addEventListener('click', closeModal3)
+
+
+  // modal 4
+
+const openBtn4 = document.getElementById('btn-text4')
+const modal4 = document.querySelector('.modal4-box')
+const close4 = document.getElementById('close-pic4')
+
+const openModal4 = () => {
+    modal4.style.display = 'block';
+  }
+
+  function closeModal4() {
+    modal4.style.display = 'none';
+}
+  
+  //Event Listeners
+  openBtn4.addEventListener('click', openModal4)
+  
+  close4.addEventListener('click', closeModal4)

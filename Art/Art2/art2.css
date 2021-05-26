@@ -36,8 +36,8 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
+
 
 .image{
     width: 33.33%;
@@ -78,6 +78,7 @@ body{
     color: #E27396;
     display: inline-block;
     box-shadow: none;
+    border-color: #E27396;
 }
 
 #btn-text2{
@@ -90,6 +91,8 @@ body{
     color: #E27396;
     display: inline-block;
     box-shadow: none;
+    border-color: #E27396;
+
 }
 
 #btn-text3{
@@ -102,6 +105,22 @@ body{
     color: #E27396;
     display: inline-block;
     box-shadow: none;
+    border-color: #E27396;
+
+}
+
+#btn-text4{
+    cursor: pointer;
+    background: none;
+    outline: none;
+    font-weight: 100;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #E27396;
+    display: inline-block;
+    box-shadow: none;
+    border-color: #E27396;
+
 }
 
 .image:hover .image-overlay {
@@ -139,7 +158,6 @@ body{
     text-align: center;
 }
   
-  
 
 /* Modal 1 */
 .modal1-box{
@@ -163,7 +181,7 @@ body{
 	height: 600px;
 	width: 1200px;
 	/* border-radius: 2px; */
-    margin: 120px auto;
+    margin: 200px auto;
     object-fit: cover;
 	/* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
     /* display: flex; 
@@ -179,7 +197,10 @@ body{
 
 #modal1-pic{
     display: block;
+    width: 50%;
 }
+
+
 
 
   
@@ -260,6 +281,50 @@ body{
     display: block;
 }
 
+
+/* Modal 4 */
+
+.modal4-box{
+    background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+    display: none;
+}
+
+.modal4-text{
+	height: 600px;
+	width: 1200px;
+	/* border-radius: 2px; */
+    margin: 120px auto;
+    object-fit: cover;
+	/* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    font-family: 'Courier New', Courier, monospace
+}
+
+#close-pic4{
+    color: white;
+    display: flex;
+    justify-content: first baseline;
+}
+
+#modal4-pic{
+    display: block;
+}
+
+
+
+
+
+/* footer */
 h2{
     text-align: center;
 }
